@@ -1,7 +1,13 @@
 import { Outlet } from 'react-router-dom'
 
+import { AppProviders } from '@/app/providers'
+
 const App = () => {
-  return <Outlet />
+  return (
+    <AppProviders>
+      <Outlet />
+    </AppProviders>
+  )
 }
 
 export default App
